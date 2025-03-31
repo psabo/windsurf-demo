@@ -1,0 +1,48 @@
+# Frontend Dev Rules
+
+## Command Runner
+- Use just commands for all repo actions; wrap npm/yarn scripts in justfile
+- Check just file and package.json before proceeding
+
+## Code Style
+- Clarity over brevity; readability over clever code
+- Naming: camelCase (vars/funcs), PascalCase (components), UPPER_SNAKE_CASE (constants)
+- Prefix booleans with is/has/should; handlers with handle/on
+- 2-space indent; use ESLint/Prettier/TypeScript; format-on-save
+- Comments explain "why"; use JSDoc for complex props/functions
+- Small components (<300 lines); extract logic to hooks/utilities
+
+## Architecture
+- Organize by feature/domain; follow clear patterns
+- UI state local, shared data in global state
+- Hide complexity in hooks/utilities; abstract third-party libs
+- Minimal component coupling; props over global state
+- Composition over inheritance; consider DI for services
+- Create reusable components; extract common logic to hooks
+- Maintain component library for UI elements
+
+## Error Handling/Testing
+- Use error boundaries; provide fallback UIs
+- Add proper error states for forms/data fetching
+- Write testable components; use data-testid attributes
+- Unit tests (Jest/Vitest), component tests (RTL), E2E (Cypress/Playwright)
+- Validate inputs client+server-side; use PropTypes/TypeScript
+- Guard against XSS/injection attacks
+
+## Performance
+- Use memo/useMemo/useCallback appropriately
+- Implement code splitting; optimize images (WebP/AVIF)
+- Virtualize long lists
+- Measure first, optimize hotspots
+- Clean up effects; cancel pending requests
+- Manage cache invalidation
+
+## Frontend-Specific
+- A11y: WCAG 2.1 AA, semantic HTML, ARIA, screen reader testing
+- Responsive: mobile-first, CSS Grid/Flexbox, test multiple devices
+- State: scale-appropriate solutions, separate UI/domain state, handle loading states
+- Build: minimize bundles, optimize asset loading, configure cache headers
+
+## Source Control
+- Git with proper branching (main, feature, release, hotfix)
+- Commit frequently to track changes

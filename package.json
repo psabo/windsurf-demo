@@ -1,0 +1,30 @@
+{
+  "name": "burger-space-invaders",
+  "version": "1.0.0",
+  "description": "A retro-style web-based game where you defend against invading burger enemies",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "serve": "python3 -m http.server 8081"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-jest": "^29.7.0",
+    "canvas": "^2.11.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
