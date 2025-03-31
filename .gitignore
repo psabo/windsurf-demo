@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# AWS CDK
+cdk.out/
+.cdk.staging/
+cdk.context.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Node and JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+/coverage/
+.nyc_output/
+jest-results/
+
+# Build and bundle
+/dist/
+/build/
+.cache/
+.parcel-cache/
+/.tmp/
+/.pnp/
+.pnp.js
+
+# Project specific
+*.csv
+*.xlsx
+*.sql
+notes/
+.notes
+.serverless/
+localtools/
+
+# Logs
+logs/
+*.log
+
+# Wiz CLI
+.wiz-cache/
+wiz-scan-results.json
+
+# Browser-specific
+.chrome/
+
+# Game development specific
+*.min.js
+*.map
+.sourcemaps/
+audio/temp/
+sprites/temp/
+assets/raw/
+.firebase/
+firebase-debug.log
+scores.json
